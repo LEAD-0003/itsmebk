@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bala Kumar C P - Senior Laravel Developer Resume</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.42;
+      font-size: 9.5pt;
+      margin: 0;
+      padding: 0;
+      background-color: #0c1222;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .action-toolbar {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      color: #fff;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 100;
+    }
+
+    .action-toolbar a, .action-toolbar button {
+      background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);
+      color: #ffffff;
+      border: none;
+      padding: 9px 20px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+    }
+
+    .action-toolbar a.back-btn {
+      background: rgba(255, 255, 255, 0.1);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: none;
+    }
+
+    .action-toolbar a:hover, .action-toolbar button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+
+    .resume-page {
+      max-width: 210mm;
+      min-height: 297mm;
+      margin: 28px auto 50px;
+      padding: 16mm 20mm;
+      background: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+    }
+
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+      .action-toolbar {
+        display: none !important;
+      }
+      .resume-page {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2.5px solid #0284c7;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22pt;
+      font-weight: 800;
+      margin: 0 0 3px 0;
+      color: #0f172a;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .designation {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12.5pt;
+      font-weight: 700;
+      color: #0284c7;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-row {
+      font-size: 9.2pt;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .contact-row a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f172a;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 14px;
+      background: #0284c7;
+      border-radius: 2px;
+    }
+
+    p {
+      margin: 0 0 6px 0;
+      text-align: justify;
+      color: #334155;
+    }
+
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 6px;
+    }
+
+    .skills-table td {
+      padding: 3px 0;
+      vertical-align: top;
+      font-size: 9.3pt;
+    }
+
+    .skills-table td.cat-name {
+      font-weight: 700;
+      color: #0f172a;
+      width: 25%;
+    }
+
+    .item-block {
+      margin-bottom: 10px;
+      page-break-inside: avoid;
+    }
+
+    .item-title {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 9.8pt;
+    }
+
+    .item-subtitle {
+      display: flex;
+      justify-content: space-between;
+      font-style: normal;
+      color: #0284c7;
+      font-size: 9.2pt;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .item-period {
+      color: #64748b;
+      font-weight: 500;
+      font-size: 8.8pt;
+    }
+
+    .project-tech {
+      font-size: 9pt;
+      color: #0369a1;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    ul {
+      margin: 3px 0 6px 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 3px;
+      line-height: 1.4;
+      color: #334155;
+    }
+
+    .details-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 4px 0;
+    }
+
+    .details-list li {
+      margin-bottom: 4px;
+      font-size: 9.2pt;
+      line-height: 1.45;
+    }
+
+    .details-list strong {
+      color: #0f172a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Interactive Action Bar -->
+  <div class="action-toolbar">
+    <div>
+      <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <button onclick="window.print()"><i class="fas fa-print"></i> Print / Save as PDF</button>
+      <a href="mailto:balak1582@gmail.com"><i class="fas fa-envelope"></i> Contact Bala</a>
+    </div>
+  </div>
+
+  <div class="resume-page">
+    
+    <!-- Header -->
+    <div class="header">
+      <h1>BALA KUMAR C P</h1>
+      <div class="designation">Senior Laravel Developer &amp; Full-Stack Architect</div>
+      <div class="contact-row">
+        Tamil Nadu, India (Actively Seeking Relocation to Dubai / UAE) &bull; Notice Period: 15–30 Days<br>
+        Email: <a href="mailto:balak1582@gmail.com">balak1582@gmail.com</a> |
+        Phone / WhatsApp: +91 9487935654 |
+        GitHub: <a href="https://github.com/LEAD-0003" target="_blank">github.com/LEAD-0003</a>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <h2>Professional Summary</h2>
+    <p>
+      Results-driven Senior Laravel Developer and Full-Stack Architect with 6+ years of commercial experience in architecting robust backend ecosystems, high-throughput RESTful APIs, and scalable web applications using PHP, Laravel, and MySQL. Proven track record in database query optimization (cutting latency by 30%+), asynchronous queues, third-party integrations, and leading full engineering lifecycles. Actively targeting senior backend engineering roles in Dubai / UAE tech ecosystems with immediate visa-readiness and scalable system delivery capabilities.
+    </p>
+
+    <!-- Technical Skills -->
+    <h2>Technical Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <td class="cat-name">Backend &amp; Frameworks:</td>
+        <td>PHP (7.x / 8.x), Laravel 10/11 (Eloquent ORM, Queues, Jobs, Events, Sanctum, Artisan CLI), MVC Architecture, SOLID Principles, Design Patterns</td>
+      </tr>
+      <tr>
+        <td class="cat-name">Database &amp; Caching:</td>
+        <td>MySQL (Schema Architecture, Query Optimization, Database Indexing, Slow Query Profiling), Redis / Cache, Migrations &amp; Seeds</td>
+      </tr>
+      <tr>
+        <td class="cat-name">Frontend &amp; APIs:</td>
+        <td>RESTful API Design &amp; Versioning, JSON, React.js, JavaScript (ES6+), HTML5, CSS3 / Tailwind, Blade Templating, Webhooks</td>
+      </tr>
+      <tr>
+        <td class="cat-name">Tools, DevOps &amp; Cloud:</td>
+        <td>Git, GitHub, Postman API Testing, Composer, Linux VPS (Ubuntu/Debian), cPanel Server Deployment, SSL, Docker Basics</td>
+      </tr>
+    </table>
+
+    <!-- Professional Experience -->
+    <h2>Professional Experience</h2>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>Reachawave</span>
+        <span>Tamil Nadu, India</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Senior Laravel Developer</span>
+        <span class="item-period">Feb 2025 – Present</span>
+      </div>
+      <ul>
+        <li>Architect, develop, and scale enterprise backend systems and web applications utilizing PHP, Laravel, and MySQL.</li>
+        <li>Engineer secure, high-throughput RESTful APIs integrated with modern frontend frameworks and third-party SaaS services.</li>
+        <li>Optimize complex SQL queries, database indexing, and caching layers to elevate system stability and cut API latency significantly.</li>
+        <li>Lead backend technical architecture discussions, establishing coding standards, automated workflows, and delivery benchmarks.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>Red Associate</span>
+        <span>Nagercoil, Tamil Nadu, India</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Laravel Developer</span>
+        <span class="item-period">Aug 2024 – Jan 2025</span>
+      </div>
+      <ul>
+        <li>Engineered performant backend modules with PHP and Laravel, ensuring clean architecture and modular codebase separation.</li>
+        <li>Designed and documented scalable REST APIs for mobile and web frontend integrations, reducing integration sync errors.</li>
+        <li>Refactored existing database schemas and queries, slashing transaction bottlenecks and boosting data retrieval response times by 30%+.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>Ideaux Tech Pvt Ltd</span>
+        <span>Tamil Nadu, India</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Developer</span>
+        <span class="item-period">Jan 2023 – Jul 2024</span>
+      </div>
+      <ul>
+        <li>Engineered enterprise-grade web applications focusing on complex backend business logic, authentication, and role hierarchies.</li>
+        <li>Diagnosed and patched mission-critical production bugs, ensuring 99.9% application uptime and data integrity.</li>
+        <li>Collaborated with product owners and cross-functional teams to deliver custom modules matching stringent client specifications.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>Dynamic Dreamers</span>
+        <span>Tamil Nadu, India</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Software Developer</span>
+        <span class="item-period">Jul 2019 – Nov 2022</span>
+      </div>
+      <ul>
+        <li>Developed and deployed full-stack and backend modules for business applications using PHP frameworks and MySQL.</li>
+        <li>Normalized database structures to support high-volume transaction processing and maintain rigorous referential integrity.</li>
+        <li>Managed application lifecycle end-to-end including deployment scripts, cPanel configurations, and maintenance patching.</li>
+      </ul>
+    </div>
+
+    <!-- Key Projects & Solutions Built -->
+    <h2>Key Projects &amp; Systems Built</h2>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>Campus Wave — School &amp; Campus ERP Platform</span>
+      </div>
+      <div class="project-tech">Tech Stack: Laravel 11, PHP 8.x, MySQL, REST APIs, React.js, Eloquent ORM</div>
+      <ul>
+        <li>Architected an enterprise school ERP system handling student lifecycles, automated fee billing, admissions, examinations, and attendance tracking.</li>
+        <li>Designed optimized relational database schemas and scalable REST endpoints facilitating real-time administrative reporting and analytics.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>TUV Manage — Enterprise Operations &amp; Workflow Management System</span>
+      </div>
+      <div class="project-tech">Tech Stack: Laravel, PHP, MySQL, Queues &amp; Jobs, RBAC, REST APIs</div>
+      <ul>
+        <li>Engineered custom backend architecture for enterprise task auditing, automated status approvals, and strict role-based access control (RBAC).</li>
+        <li>Automated critical asynchronous jobs and report-generation pipelines to streamline departmental operations.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>VMMS Portal — Web Portal &amp; Administration Management System</span>
+      </div>
+      <div class="project-tech">Tech Stack: PHP, Laravel, MySQL, REST APIs, Bootstrap</div>
+      <ul>
+        <li>Spearheaded end-to-end architecture and deployment of the official management portal for Vasantham Mahalir Munnetra Sangam (VMMS), reducing administrative paperwork by 70%.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-title">
+        <span>Smart Brain Academy — Education Management &amp; Learning Portal</span>
+      </div>
+      <div class="project-tech">Tech Stack: Laravel, PHP, MySQL, REST APIs, Payment Gateways</div>
+      <ul>
+        <li>Built core database structures and REST APIs supporting student course enrollment, records management, payment webhook validation, and automated evaluation metrics.</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <h2>Education</h2>
+    <div class="item-block">
+      <div class="item-title">
+        <span>Vins Christian College of Engineering</span>
+        <span>Tamil Nadu, India</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Bachelor of Engineering (B.E.) in Computer Science and Engineering</span>
+        <span class="item-period">2015 – 2019</span>
+      </div>
+    </div>
+
+    <!-- Relocation & Additional Details -->
+    <h2>Relocation &amp; Additional Details</h2>
+    <ul class="details-list">
+      <li><strong>Date of Birth:</strong> 27/06/1998</li>
+      <li><strong>Permanent Address:</strong> 9-86, S/o C. Paul Raj, Parambai Kaatuvilai, Alancode, Kanniyakumari - 629802, Tamil Nadu, India</li>
+      <li><strong>Marital Status:</strong> Single</li>
+      <li><strong>Passport Status:</strong> Valid Indian Passport (No: S9930896 | Valid until: 13/03/2029) — Ready for UAE Employment Visa sponsorship</li>
+      <li><strong>Relocation Status:</strong> Actively seeking relocation to Dubai / UAE; ready for interviews and relocation within notice period</li>
+      <li><strong>Notice Period:</strong> 15 – 30 Days</li>
+      <li><strong>Languages:</strong> English (Professional Working Proficiency), Tamil (Native)</li>
+    </ul>
+
+  </div>
+
+</body>
+
+</html>
